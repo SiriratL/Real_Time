@@ -24,3 +24,7 @@ $ psql -U root root
     --replication-factor 1 \
     --partitions 4 \
     --create
+ - docker-compose exec elasticsearch curl -XGET "localhost:9200/food_coded/_search?format=json&pretty"
+ -  RUN SCRIPT '/etc/sql/all.sql';
+ -  docker-compose exec ksqldb-cli  ksql http://ksqldb-server:8088
+ -  
